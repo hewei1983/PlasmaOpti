@@ -12,6 +12,11 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
 RUN mkdir -p /go/src/truffle \	
   && cd /go/src/truffle \	
   && truffle init 
+  
+RUN mkdir -p /go/src/bancor \
+  && cd /go/src/bancor \
+  && git clone https://github.com/bancorprotocol/contracts.git
+  
 RUN apt-get install -y vim \	
   && apt-get install -y tree
 # install golang tools# 
