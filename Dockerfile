@@ -22,4 +22,4 @@ RUN apt-get install -y vim \
 # install golang tools# 
 RUN go get github.com/kardianos/govendor
 # set work directory  
-WORKDIR /go/src/truffle
+WORKDIR /go/src/truffle 
