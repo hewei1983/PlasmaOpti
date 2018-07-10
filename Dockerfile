@@ -17,6 +17,10 @@ RUN mkdir -p /go/src/bancor \
   && cd /go/src/bancor \
   && git clone https://github.com/bancorprotocol/contracts.git
   
+RUN mkdir -p /go/src/multiSigWallet \
+  && cd /go/src/multiSigWallet \
+  && git clone https://github.com/gnosis/MultiSigWallet.git
+
 RUN apt-get install -y vim \	
   && apt-get install -y tree
 # install golang tools# 
