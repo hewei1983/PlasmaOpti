@@ -5,7 +5,8 @@ MAINTAINER hewei <eric.he@hotmail.com>
 EXPOSE 1234
 # install nodejs and install truffle and ganache-cli
 RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \	
-  && apt-get install -y nodejs \	&& npm install -g truffle \	
+  && apt-get install -y nodejs \	
+  && npm install -g truffle \	
   && npm install -g ganache-cli
 # make truffle workspace and initialize
 RUN mkdir -p /go/src/truffle \	
