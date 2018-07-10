@@ -1,6 +1,6 @@
 # http://...# Start a truffle container for testing ethereum funcions. 
 FROM golang:1.10 
-MAINTAINER hewei <eric.he@hotmail.com>
+MAINTAINER hewei <eric.he@hotmail.com>  
 # Mapping container to host port, for connecting, e.g., metamask
 EXPOSE 1234
 # install nodejs and install truffle and ganache-cli
