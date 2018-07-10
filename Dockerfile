@@ -1,5 +1,5 @@
 # http://...# Start a truffle container for testing ethereum funcions. 
-FROM golang:1.10 
+FROM golang:1.10
 MAINTAINER hewei <eric.he@hotmail.com>  
 # Mapping container to host port, for connecting, e.g., metamask
 EXPOSE 1234
@@ -15,5 +15,5 @@ RUN apt-get install -y vim \
   && apt-get install -y tree
 # install golang tools# 
 RUN go get github.com/kardianos/govendor
-# set work directory
+# set work directory  
 WORKDIR /go/src/truffle
