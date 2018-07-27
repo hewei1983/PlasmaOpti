@@ -8,7 +8,7 @@ RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
   && apt-get install -y nodejs \	
   && npm install -g truffle \	
   && npm install -g ganache-cli \
-  && npm install ethereumjs-tx
+  && npm install ethereumjs-tx  
   
 # make truffle workspace and initialize
 RUN mkdir -p /go/src/truffle \	
