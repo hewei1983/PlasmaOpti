@@ -22,8 +22,13 @@ RUN mkdir -p /go/src/bancor \
 RUN mkdir -p /go/src/multiSigWallet \
   && cd /go/src/multiSigWallet \
   && git clone https://github.com/gnosis/MultiSigWallet.git
-  
-RUN mkdir -p /go/src
+ 
+# p2p testing materials 
+RUN mkdir -p /go/src/p2p \
+  && cd /go/src/p2p \
+  && go get -d github.com/libp2p/go-libp2p/... \
+  && go get github.com/davecgh/go-spew/spew \
+  && git clone https://github.com/mycoralhealth/blockchain-tutorial.git
 
 RUN apt-get install -y vim \	
   && apt-get install -y tree
