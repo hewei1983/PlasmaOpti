@@ -22,6 +22,8 @@ RUN mkdir -p /go/src/bancor \
 RUN mkdir -p /go/src/multiSigWallet \
   && cd /go/src/multiSigWallet \
   && git clone https://github.com/gnosis/MultiSigWallet.git
+  
+RUN mkdir -p /go/src
 
 RUN apt-get install -y vim \	
   && apt-get install -y tree
