@@ -28,11 +28,13 @@ RUN mkdir -p /go/src/p2p \
   && cd /go/src/p2p \
   && go get -d github.com/libp2p/go-libp2p/... \
   && go get github.com/davecgh/go-spew/spew \
-  && git clone https://github.com/mycoralhealth/blockchain-tutorial.git
+  && git clone https://github.com/mycoralhealth/blockchain-tutorial.git \
+  && cd /go/src/github.com/libp2p/go-libp2p \
+  && make deps # ensure to properly install all dependencies for go-libp2p.
 
 RUN apt-get install -y vim \	
   && apt-get install -y tree
 # install golang tools# 
 RUN go get github.com/kardianos/govendor
 # set work directory  
-WORKDIR /go/src/truffle 
+WORKDIR /go/src 
